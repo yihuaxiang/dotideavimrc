@@ -1,0 +1,29 @@
+" Load common basic keymaps
+" source .vimrc
+
+" IdeaVim specific settings are here
+set rnu
+set nu
+set ic
+
+nnoremap ,cp :action CloseProject<CR>
+nnoremap ,cap :action CopyAbsolutePath<CR>
+nnoremap ,can :action CloseAllNotifications<CR>
+nnoremap ,gp :action Git.Pull<CR>
+nnoremap ,gf :action Git.Fetch<CR>
+nnoremap ,rp :action RecentProjectListGroup<CR>
+nnoremap ,rl :action RecentLocations<CR>
+nnoremap ,tm :action ActivateTerminalToolWindow<CR>
+nnoremap <C-p> :action SearchEverywhere<CR>
+nnoremap ,ac :action GotoAction<CR>
+nnoremap ,an :action Annotate<CR>
+nnoremap ,rn :action RunClass<CR>
+nnoremap ,rm :action Tool_External Tools_RmCurrentFile<CR>
+nnoremap ,lg :action ShowLog<CR>
+nnoremap ,hs :action Vcs.ShowTabbedFileHistory<CR>
+nnoremap ,nm :action MethodDown<CR>
+nnoremap ,np :action MethodUp<CR>
+nnoremap ,fq :s/"/'/g<CR>
+nnoremap ,st :action Stop<CR>
+nnoremap ,db :action JRebel Debug<CR>
+nnoremap ,br :action Git.Branches<CR>
