@@ -1,24 +1,44 @@
+
 " Load common basic keymaps
 " source .vimrc
 
 " IdeaVim specific settings are here
+
+"  显示相对行号
 set rnu
+
+" 显示行号
 set nu
+
+" 忽略大小写
 set ic
 
+" 关闭项目
 nnoremap ,cp :action CloseProject<CR>
+" 复制当前文件的绝对路径
 nnoremap ,cap :action CopyAbsolutePath<CR>
+" 关闭所有通知
 nnoremap ,can :action CloseAllNotifications<CR>
+" 拉取代码
 nnoremap ,gp :action Git.Pull<CR>
+" fetch 代码
 nnoremap ,gf :action Git.Fetch<CR>
+" 显示最近打开的项目
 nnoremap ,rp :action RecentProjectListGroup<CR>
+" 显示最近位置
 nnoremap ,rl :action RecentLocations<CR>
+" 激活终端
 nnoremap ,tm :action ActivateTerminalToolWindow<CR>
+" 打开万能搜索框
 nnoremap <C-p> :action SearchEverywhere<CR>
+" 打开 action 搜索框
 nnoremap ,ac :action GotoAction<CR>
+" 对当前文件执行 git blame
 nnoremap ,an :action Annotate<CR>
+" 运行
 nnoremap ,rn :action RunClass<CR>
 nnoremap ,rm :action Tool_External Tools_RmCurrentFile<CR>
+" 显示 git 日志
 nnoremap ,lg :action ShowLog<CR>
 nnoremap ,hs :action Vcs.ShowTabbedFileHistory<CR>
 nnoremap ,nm :action MethodDown<CR>
@@ -26,4 +46,6 @@ nnoremap ,np :action MethodUp<CR>
 nnoremap ,fq :s/"/'/g<CR>
 nnoremap ,st :action Stop<CR>
 nnoremap ,db :action JRebel Debug<CR>
+" 打开所有分支
 nnoremap ,br :action Git.Branches<CR>
+
